@@ -172,48 +172,10 @@ h.style.fontSize=(18+Math.random()*18)+"px";
 document.body.appendChild(h);
 
 }
+
 function openLove(){
 
-const text=`Eli ❤️
-
-لە هەر ساتێکی ژیانمدا
-تۆ جوانترین بەشی دڵمی.
-
-هەر کاتێک بیرت لێ دەکەم،
-دڵم پڕ دەبێت لە خۆشی.
-
-I Love You Forever ❤️
-
-Araz`;
-
-const msg=document.getElementById("msg");
-
-msg.style.display="block";
-msg.innerHTML="";
-
-let i=0;
-
-function typing(){
-
-if(i<text.length){
-
-if(text.charAt(i)=="\n"){
-msg.innerHTML+="<br>";
-}else{
-msg.innerHTML+=text.charAt(i);
-}
-
-i++;
-
-setTimeout(typing,45);
-
-}
-
-}
-
-typing();
-
-}
+document.getElementById("msg").style.display="block";
 
 }
 // 🌙 Moon
