@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Araz ❤️ Eli</title>
+<style>
+body{
+margin:0;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(135deg,#ff9ecf,#ffd6ea);
+font-family:Arial,sans-serif;
+overflow:hidden;
+}
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+h1{
+color:#e91e63;
+animation:beat 1s infinite;
+}
+button{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#e91e63;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+#msg{
+display:none;
+margin-top:20px;
+font-size:20px;
+color:#444;
+}
+@keyframes beat{
+50%{transform:scale(1.1);}
+}
+</style>
+</head>
+<body>
 
+<div class="card">
+<h1>Araz ❤️ Eli</h1>
+
+<button onclick="showLove()">کردنەوەی دڵم ❤️</button>
+
+<div id="msg">
+<p>
+ئەی Eli ❤️<br><br>
+
+تۆ جوانترین بەشی ژیانمی.<br>
+هەمیشە خۆشم دەوێیت. 🌹<br><br>
+
+<b>Araz ❤️ Eli</b><br>
+📅 27/11/2025 ♾️
+</p>
+</div>
+
+</div>
+
+<script>
+function showLove(){
+document.getElementById("msg").style.display="block";
+}
+</script>
+
+</body>
+</html>
