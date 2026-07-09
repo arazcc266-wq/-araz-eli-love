@@ -212,7 +212,56 @@ setTimeout(typing,45);
 }
 
 typing();
+// ❤️ Part 4
 
+setTimeout(()=>{
+
+let loveBox=document.createElement("div");
+
+loveBox.innerHTML=`
+🌹 Eli 🌹
+<br><br>
+تۆ تەنها خۆشەویستی نیت...
+<br>
+تۆ ئارامی دڵمی ❤️
+<br><br>
+هەمیشە لەگەڵتم ♾️
+<br><br>
+Araz ❤️ Eli
+`;
+
+loveBox.style.position="fixed";
+loveBox.style.left="50%";
+loveBox.style.top="50%";
+loveBox.style.transform="translate(-50%,-50%)";
+loveBox.style.background="rgba(255,255,255,0.2)";
+loveBox.style.backdropFilter="blur(15px)";
+loveBox.style.padding="35px";
+loveBox.style.borderRadius="30px";
+loveBox.style.color="white";
+loveBox.style.fontSize="22px";
+loveBox.style.textAlign="center";
+loveBox.style.zIndex="1000";
+loveBox.style.boxShadow="0 0 40px pink";
+
+document.body.appendChild(loveBox);
+
+
+loveBox.animate([
+{
+opacity:0,
+transform:"translate(-50%,-50%) scale(.5)"
+},
+{
+opacity:1,
+transform:"translate(-50%,-50%) scale(1)"
+}
+],
+{
+duration:1200
+});
+
+},3000);
 }{
 
 }
