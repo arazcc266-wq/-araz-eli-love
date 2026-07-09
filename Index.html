@@ -242,6 +242,35 @@ for(let i=0;i<12;i++){
 
  document.body.appendChild(b);
 }
+ // ❤️ Big Heart
+
+const bigHeart=document.createElement("div");
+
+bigHeart.innerHTML="❤️";
+
+bigHeart.style.position="fixed";
+bigHeart.style.bottom="30px";
+bigHeart.style.right="30px";
+bigHeart.style.fontSize="75px";
+bigHeart.style.zIndex="999";
+
+document.body.appendChild(bigHeart);
+
+bigHeart.animate([
+
+{transform:"scale(1)"},
+
+{transform:"scale(1.25)"},
+
+{transform:"scale(1)"}
+
+],{
+
+duration:900,
+
+iterations:Infinity
+
+});
 </script>
 
 </body>
