@@ -178,7 +178,70 @@ function openLove(){
 document.getElementById("msg").style.display="block";
 
 }
+// 🌙 Moon
+const moon=document.createElement("div");
+moon.style.position="absolute";
+moon.style.width="140px";
+moon.style.height="140px";
+moon.style.borderRadius="50%";
+moon.style.background="#fff9c4";
+moon.style.boxShadow="0 0 80px #fff";
+moon.style.top="40px";
+moon.style.right="40px";
+moon.style.zIndex="1";
+document.body.appendChild(moon);
 
+// ✨ Sparkles
+for(let i=0;i<80;i++){
+ let s=document.createElement("div");
+ s.style.position="absolute";
+ s.style.width="4px";
+ s.style.height="4px";
+ s.style.borderRadius="50%";
+ s.style.background="#fff";
+ s.style.left=Math.random()*100+"vw";
+ s.style.top=Math.random()*100+"vh";
+ s.style.opacity=Math.random();
+ s.style.animation="twinkle 2s infinite";
+ document.body.appendChild(s);
+}
+
+// 🌹 Roses
+for(let i=0;i<25;i++){
+ let r=document.createElement("div");
+ r.innerHTML="🌹";
+ r.style.position="absolute";
+ r.style.left=Math.random()*100+"vw";
+ r.style.top="-50px";
+ r.style.fontSize=(20+Math.random()*20)+"px";
+ r.style.animation=`fall ${6+Math.random()*6}s linear infinite`;
+ r.style.animationDelay=Math.random()*6+"s";
+ document.body.appendChild(r);
+}
+
+// 🦋 Butterflies
+for(let i=0;i<12;i++){
+ let b=document.createElement("div");
+ b.innerHTML="🦋";
+ b.style.position="absolute";
+ b.style.left=Math.random()*100+"vw";
+ b.style.top=Math.random()*100+"vh";
+ b.style.fontSize="28px";
+
+ let x=Math.random()*120-60;
+ let y=Math.random()*120-60;
+
+ b.animate([
+   {transform:"translate(0,0)"},
+   {transform:`translate(${x}px,${y}px)`},
+   {transform:"translate(0,0)"}
+ ],{
+   duration:5000+Math.random()*3000,
+   iterations:Infinity
+ });
+
+ document.body.appendChild(b);
+}
 </script>
 
 </body>
